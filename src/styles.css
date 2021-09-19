@@ -34,11 +34,18 @@ span {
 
 .header>span {
     width: 30%;
+    text-align: right;
 }
 
 .left-column {
     background: #EAF1DD;
     grid-area: left-column;
+}
+
+.menu {
+    background: #FFFFFF;
+    grid-area: menu;
+    justify-content: center;
 }
 
 .right-column-top-line {
@@ -59,4 +66,25 @@ span {
 .footer>span {
     width: 30%;
     text-align: right;
+}
+
+.disabled {
+    color: grey;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+a {
+    color: #2196f3;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1a78c2;
+    transition: .3s;
+}
+
+ul {
+    list-style-type: square;
 }
