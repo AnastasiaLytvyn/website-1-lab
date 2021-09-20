@@ -1,0 +1,27 @@
+{
+  "name": "website-1-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiaLytvyn/website-1-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiaLytvyn/website-1-lab/issues"
+  },
+  "homepage": "https://github.com/AnastasiaLytvyn/website-1-lab#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-plugin-import": "^2.24.2",
+    "husky": "^7.0.2",
+    "prettier": "2.4.1"
+  },
+  "dependencies": {}
+}
