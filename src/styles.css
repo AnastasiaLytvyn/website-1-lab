@@ -29,19 +29,27 @@ div {
   border: 1px solid black;
 }
 
+h1 {
+  display: inline;
+  float: left;
+}
+
 span {
   word-break: break-word;
   width: 80%;
+  padding: 10px;
 }
 
-.header {
+header {
   background: var(--header-footer-color);
   grid-area: header;
+  padding: 10px;
 }
 
-.header > span {
+header > span {
   width: 30%;
   text-align: right;
+  float: right;
 }
 
 .left-column {
@@ -65,14 +73,16 @@ menu {
   grid-area: right-column-bottom-line;
 }
 
-.footer {
+footer {
   background: var(--header-footer-color);
   grid-area: footer;
+  padding: 10px;
 }
 
-.footer > span {
+footer > span {
   width: 30%;
   text-align: right;
+  float: right;
 }
 
 .disabled {
