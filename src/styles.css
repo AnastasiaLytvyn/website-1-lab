@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 0 !important;
+  margin: 0;
   height: 100vh;
   display: grid;
   grid-template-areas: 'header header header' 'left-column menu right-column-top-line' 'left-column menu right-column-bottom-line' 'left-column footer footer';
@@ -21,17 +21,14 @@ div {
   justify-content: space-between;
 }
 
-.title {
+h1 {
+  display: inline;
+  float: left;
   width: 200px;
   padding: 20px;
   background: var(--main-bg-color);
   text-align: right;
   border: 1px solid black;
-}
-
-h1 {
-  display: inline;
-  float: left;
 }
 
 span {
