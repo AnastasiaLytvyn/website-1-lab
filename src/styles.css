@@ -11,7 +11,7 @@ body {
   margin: 0;
   height: 100vh;
   display: grid;
-  grid-template-areas: 'header header header' 'left-column menu right-column-top-line' 'left-column menu right-column-bottom-line' 'left-column footer footer';
+  grid-template-areas: 'header header header' 'aside menu right-column-top-line' 'aside menu right-column-bottom-line' 'aside footer footer';
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr repeat(2, minmax(min-content, 1fr)) 1fr;
 }
@@ -51,9 +51,10 @@ header > span {
   float: right;
 }
 
-.left-column {
+aside {
   background: var(--main-colomn-color);
-  grid-area: left-column;
+  grid-area: aside;
+  text-align: center;
 }
 
 menu {
