@@ -15,7 +15,7 @@ body {
   margin: 0;
   height: 100%;
   display: grid;
-  grid-template-areas: 'header header header' 'aside menu right-column-top-line' 'aside menu right-column-bottom-line' 'aside footer footer';
+  grid-template-areas: "header header header" "aside menu right-column-top-line" "aside menu right-column-bottom-line" "aside footer footer";
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr repeat(2, minmax(min-content, 1fr)) 1fr;
 }
