@@ -1,0 +1,107 @@
+:root {
+  --main-bg-color: white;
+  --header-footer-color: #c6d9f1;
+  --main-colomn-color: #eaf1dd;
+  --auxiliary-colomn-color: #fde9d9;
+  --ref-color: #2196f3;
+  --ref-hover-color: #1a78c2;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header header header" "aside menu right-column-top-line" "aside menu right-column-bottom-line" "aside footer footer";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr repeat(2, minmax(min-content, 1fr)) 1fr;
+}
+
+div {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  display: inline;
+  float: left;
+  width: 200px;
+  padding: 20px;
+  background: var(--main-bg-color);
+  text-align: right;
+  border: 1px solid black;
+}
+
+span {
+  word-break: break-word;
+  width: 80%;
+  padding: 10px;
+}
+
+header {
+  background: var(--header-footer-color);
+  grid-area: header;
+  padding: 10px;
+}
+
+header > span {
+  width: 30%;
+  text-align: right;
+  float: right;
+}
+
+aside {
+  background: var(--main-colomn-color);
+  grid-area: aside;
+  text-align: center;
+}
+
+menu {
+  background: var(--main-bg-color);
+  grid-area: menu;
+  justify-content: center;
+}
+
+.right-column-top-line {
+  background: var(--main-colomn-color);
+  grid-area: right-column-top-line;
+}
+
+.right-column-bottom-line {
+  background: var(--auxiliary-colomn-color);
+  grid-area: right-column-bottom-line;
+}
+
+footer {
+  background: var(--header-footer-color);
+  grid-area: footer;
+  padding: 10px;
+}
+
+footer > span {
+  width: 30%;
+  text-align: right;
+  float: right;
+}
+
+.disabled {
+  color: grey;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+a {
+  color: var(--ref-color);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ref-hover-color);
+  transition: 0.3s;
+}
